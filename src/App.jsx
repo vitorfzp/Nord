@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import QuemSomos from './components/QuemSomos';
 import Valores from './components/Valores';
 import Servicos from './components/Servicos';
+import ProcessoSimplificado from './components/ProcessoSimplificado'; // <<<<< NOVA IMPORTAÇÃO
 import Contato from './components/Contato';
 import Footer from './components/Footer';
 
@@ -36,6 +37,7 @@ function App() {
         <div className="section-animate"><QuemSomos /></div>
         <div className="section-animate"><Valores /></div>
         <div className="section-animate"><Servicos /></div>
+        <div className="section-animate"><ProcessoSimplificado /></div> {/* <<<<< NOVO COMPONENTE AQUI */}
         <div className="section-animate"><Contato /></div>
       </main>
       <Footer />

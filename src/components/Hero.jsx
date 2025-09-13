@@ -1,21 +1,22 @@
 import React from 'react';
 import { Zap, ShieldCheck, Globe } from 'lucide-react';
-import heroBackground from '../assets/hero-background.png'; // <<<<< IMPORTAÇÃO DA IMAGEM AQUI
+import heroBackground from '../assets/hero-background.jpg'; 
 
 const Hero = () => {
   return (
     <section
       id="inicio"
       className="relative min-h-screen flex items-center bg-nord-dark text-white overflow-hidden bg-cover bg-center"
-      style={{ backgroundImage: `url(${heroBackground})` }} // <<<<< APLICAÇÃO DA IMAGEM AQUI
+      style={{ backgroundImage: `url(${heroBackground})` }} 
     >
-      {/* Este div aplica o overlay escuro/verde por cima da imagem para melhor legibilidade */}
       <div className="absolute inset-0 bg-gradient-to-r from-nord-dark via-nord-dark/80 to-nord-primary/20 opacity-90"></div>
       <div className="container mx-auto px-4 z-10 grid md:grid-cols-2 gap-8 items-center">
         <div>
+          
           <span className="inline-block border border-nord-primary text-nord-primary text-sm px-4 py-1 rounded-full mb-4">
             Saúde sem distância
           </span>
+          
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
             Inteligência remota, <br />
             <span className="text-nord-primary">precisão local</span>

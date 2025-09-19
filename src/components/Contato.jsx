@@ -22,7 +22,7 @@ const Contato = () => {
             <p>Envie sua mensagem e retornaremos em até 24 horas.</p>
           </a>
 
-          <a href="https://www.instagram.com/nordcommand/" target="_blank" rel="noopener noreferrer" className="flex-1 bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-500 text-white p-8 rounded-lg hover:opacity-90 transition-all transform hover:-translate-y-1">
+          <a href="https://www.instagram.com/nord_command_center/?igsh=MTJ1M3pyc2E0aXFnMg%3D%3D#" target="_blank" rel="noopener noreferrer" className="flex-1 bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-500 text-white p-8 rounded-lg hover:opacity-90 transition-all transform hover:-translate-y-1">
             <Instagram size={40} className="mx-auto mb-4" /> {/* Ícone do Instagram */}
             <h3 className="text-2xl font-bold mb-2">Instagram</h3>
             <p>Siga-nos e fique por dentro das novidades.</p>

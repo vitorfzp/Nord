@@ -13,7 +13,7 @@ const Footer = () => {
             <img 
               src={LogoNord} 
               alt="Logo NORD Command Center" 
-              className="h-12 w-auto"
+              className="h-20 w-auto"
             />
             <p className="text-gray-400 text-sm leading-relaxed pt-2">
               Conectando especialistas em imagem médica a qualquer lugar do Brasil. Saúde sem distância, precisão sem limites.
@@ -66,7 +66,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <Instagram className="text-nord-primary mt-1 flex-shrink-0" size={18} />
                 <div>
-                  <a href="https://www.instagram.com/nordcommand/" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">@nordcommand</a>
+                  <a href="https://www.instagram.com/nord_command_center/?igsh=MTJ1M3pyc2E0aXFnMg%3D%3D#" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">@nord_command_center</a>
                   <p className="text-xs">Siga-nos</p>
                 </div>
               </li>

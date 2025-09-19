@@ -20,9 +20,9 @@ const Navbar = () => {
     <header
       // Fundo da navbar SEMPRE claro (bg-white ou bg-gray-50, etc.) e com sombra
       // Removida a lógica condicional de isScrolled para o fundo da header
-      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm shadow-md"
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white backdrop-blur-sm shadow-md"
     >
-      <div className="container mx-auto flex items-center justify-between p-3 sm:p-4"> {/* Ajustei o padding aqui */}
+      <div className="container mx-auto flex items-center justify-between p-0 sm:p-0"> {/* Ajustei o padding aqui */}
         {/* Logo no desktop (esquerda) - Agora sempre a logo colorida, pois o fundo é claro */}
         <a
           href="#inicio"
@@ -31,7 +31,7 @@ const Navbar = () => {
           <img
             src={LogoNord} // Sempre usa a logo colorida/original
             alt="Logo NORD Command Center"
-            className="h-20 sm:h-50 md:h-160 max-w-[300px] w-auto object-contain"
+            className="h-20 sm:h-40 md:h-180 max-w-[300px] w-auto object-contain"
           />
         </a>
 
@@ -90,7 +90,7 @@ const Navbar = () => {
             <img
               src={LogoNord} // Sempre usa a logo colorida/original
               alt="Logo NORD Command Center"
-              className="h-14 max-w-[300px] w-auto object-contain"
+              className="h-20 max-w-[300px] w-auto object-contain"
             />
           </a>
           <button

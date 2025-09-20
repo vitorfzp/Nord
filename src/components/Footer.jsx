@@ -19,7 +19,6 @@ const Footer = () => {
               Conectando especialistas em imagem médica a qualquer lugar do Brasil. Saúde sem distância, precisão sem limites.
             </p>
             <br></br>
-<a href="src/components/PoliticaPrivacidadepage.jsx" className="hover:text-nord-primary transition-colors">Política de Privacidade</a>
           </div>
 
           {/* Coluna 2: Navegação */}

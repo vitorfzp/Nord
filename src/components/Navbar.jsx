@@ -38,23 +38,31 @@ const Navbar = () => {
         {/* Menu Desktop - Textos agora sempre em nord-dark */}
         <nav className="hidden md:flex space-x-8">
           <a
+            href="#inicio"
+            className="hover:text-nord-primary transition-colors text-nord-dark" // Cor fixa para desktop
+          >
+        Inicio
+          </a>
+          <a
             href="#quem-somos"
             className="hover:text-nord-primary transition-colors text-nord-dark" // Cor fixa para desktop
           >
             Quem Somos
           </a>
+           <a
+            href="#valores"
+            className="hover:text-nord-primary transition-colors text-nord-dark" // Cor fixa para desktop
+          >
+            Valores
+          </a>
+          
           <a
             href="#servicos"
             className="hover:text-nord-primary transition-colors text-nord-dark" // Cor fixa para desktop
           >
             Serviços
           </a>
-          <a
-            href="#valores"
-            className="hover:text-nord-primary transition-colors text-nord-dark" // Cor fixa para desktop
-          >
-            Valores
-          </a>
+         
           <a
             href="#como-funciona"
             className="hover:text-nord-primary transition-colors text-nord-dark" // Cor fixa para desktop
@@ -140,19 +148,20 @@ const Navbar = () => {
             Quem Somos
           </a>
           <a
-            href="#servicos"
-            onClick={handleNavLinkClick}
-            className="hover:text-nord-primary transition-colors"
-          >
-            Serviços
-          </a>
-          <a
             href="#valores"
             onClick={handleNavLinkClick}
             className="hover:text-nord-primary transition-colors"
           >
             Valores
           </a>
+          <a
+            href="#servicos"
+            onClick={handleNavLinkClick}
+            className="hover:text-nord-primary transition-colors"
+          >
+            Serviços
+          </a>
+          
           <a
             href="#como-funciona"
             onClick={handleNavLinkClick}

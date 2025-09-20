@@ -18,6 +18,8 @@ const Footer = () => {
             <p className="text-gray-400 text-sm leading-relaxed pt-2">
               Conectando especialistas em imagem médica a qualquer lugar do Brasil. Saúde sem distância, precisão sem limites.
             </p>
+            <br></br>
+<a href="src/components/PoliticaPrivacidadepage.jsx" className="hover:text-nord-primary transition-colors">Política de Privacidade</a>
           </div>
 
           {/* Coluna 2: Navegação */}
@@ -26,13 +28,14 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400">
               <li><a href="#inicio" className="hover:text-white transition-colors">Início</a></li>
               <li><a href="#quem-somos" className="hover:text-white transition-colors">Quem Somos</a></li>
+              <li><a href="#valores" className="hover:text-white transition-colors">Valores</a></li>
               <li><a href="#servicos" className="hover:text-white transition-colors">Serviços</a></li>
               <li><a href="#como-funciona" className="hover:text-white transition-colors">Como Funciona</a></li>
               <li><a href="#contato" className="hover:text-white transition-colors">Contato</a></li>
             </ul>
           </div>
 
-          {/* Coluna 3: Serviços */}
+         
           <div>
             <h3 className="font-bold text-lg mb-4">Serviços</h3>
             <ul className="space-y-2 text-gray-400">

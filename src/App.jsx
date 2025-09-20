@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Index from './pages/Index';
-import PrivacyPolicy from './pages/PrivacyPolicy';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 function App() {
   return (

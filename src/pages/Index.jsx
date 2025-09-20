@@ -1,45 +1,48 @@
-import React, { useEffect } from "react";
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import QuemSomos from "@/components/QuemSomos";
-import Servicos from "@/components/Servicos";
-import ComoFunciona from "@/components/ComoFunciona";
-import Contato from "@/components/Contato";
-import Footer from "@/components/Footer";
+import React, { useEffect } from 'react';
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
+import QuemSomos from '../components/QuemSomos';
+import Valores from '../components/Valores';
+import Servicos from '../components/Servicos';
+import ProcessoSimplificado from '../components/ProcessoSimplificado';
+import Contato from '../components/Contato';
+import Footer from '../components/Footer';
 
+// Este componente agora representa sua página inicial
 const Index = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fade-in");
-            observer.unobserve(entry.target);
+            entry.target.classList.add('animate-fade-in-up');
           }
         });
       },
       { threshold: 0.1 }
     );
     
-    document.querySelectorAll(".section-animate").forEach((el) => observer.observe(el));
+    document.querySelectorAll(".section-animate").forEach((el) => {
+      el.classList.add('opacity-0');
+      observer.observe(el);
+    });
     
-    return () => {
-      document.querySelectorAll(".section-animate").forEach((el) => observer.unobserve(el));
-    };
+    return () => observer.disconnect();
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
+    <>
       <Navbar />
-      <main>
+      <main className="pt-20"> 
         <Hero />
-        <div className="section-animate opacity-0"><QuemSomos /></div>
-        <div className="section-animate opacity-0"><Servicos /></div>
-        <div className="section-animate opacity-0"><ComoFunciona /></div>
-        <div className="section-animate opacity-0"><Contato /></div>
+        <div className="section-animate"><QuemSomos /></div>
+        <div className="section-animate"><Valores /></div>
+        <div className="section-animate"><Servicos /></div>
+        <div className="section-animate"><ProcessoSimplificado /></div>
+        <div className="section-animate"><Contato /></div>
       </main>
       <Footer />
-    </div>
+    </>
   );
 };
 

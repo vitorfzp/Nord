@@ -37,11 +37,11 @@ const Navbar = () => {
 
         {/* Menu Desktop - Textos agora sempre em nord-dark */}
         <nav className="hidden md:flex space-x-8">
-          <a
+           <a
             href="#inicio"
             className="hover:text-nord-primary transition-colors text-nord-dark" // Cor fixa para desktop
           >
-        Inicio
+            Inicio
           </a>
           <a
             href="#quem-somos"
@@ -49,20 +49,19 @@ const Navbar = () => {
           >
             Quem Somos
           </a>
-           <a
+          <a
             href="#valores"
             className="hover:text-nord-primary transition-colors text-nord-dark" // Cor fixa para desktop
           >
             Valores
           </a>
-          
           <a
             href="#servicos"
             className="hover:text-nord-primary transition-colors text-nord-dark" // Cor fixa para desktop
           >
             Serviços
           </a>
-         
+          
           <a
             href="#como-funciona"
             className="hover:text-nord-primary transition-colors text-nord-dark" // Cor fixa para desktop
